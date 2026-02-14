@@ -23,6 +23,13 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish:env": "dotenv -e .env -- npm publish --access public"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.4.2"
   }
 }
